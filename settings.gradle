@@ -3,4 +3,5 @@ rootProject.name = 'component-demo'
 include 'api'
 include 'lib'
 include 'core'
+include 'random'
 
