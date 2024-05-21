@@ -13,8 +13,8 @@ public class ImportUseCase {
     this.gateway = gateway;
   }
 
-  public void execute() {
-    gateway.save(importer.importData("params"));
+  public void execute(String login, String password) {
+    gateway.save(importer.importData(login, password));
   }
 
 }

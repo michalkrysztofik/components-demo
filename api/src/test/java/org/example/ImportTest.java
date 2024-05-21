@@ -20,14 +20,16 @@ public class ImportTest {
 
   @Test
   public void test() throws InterruptedException {
-    startImport();
+    startImport("test1", "Test123");
     Thread.sleep(1000);
     sendGetData();
   }
 
-  private void startImport() {
-    ClassicHttpRequest request =
-      DefaultClassicHttpRequestFactory.INSTANCE.newHttpRequest("GET", "http://localhost:" + runningServerPort + "/start_import");
+  private void startImport(String login, String password) {
+    ClassicHttpRequest request = DefaultClassicHttpRequestFactory.INSTANCE.newHttpRequest(
+      "GET",
+      "http://localhost:" + runningServerPort + "/start_import?login=" + login + "&password=" + password
+    );
     try (CloseableHttpClient client = HttpClients.createDefault()) {
       client.execute(request, response -> {
         System.out.println("\n==========================================");
