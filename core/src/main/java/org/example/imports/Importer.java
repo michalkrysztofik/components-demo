@@ -1,4 +1,4 @@
-package org.example;
+package org.example.imports;
 
 public interface Importer {
 

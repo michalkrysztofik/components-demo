@@ -1,7 +1,6 @@
 rootProject.name = 'component-demo'
 
 include 'api'
-include 'db'
 include 'lib'
 include 'core'
 

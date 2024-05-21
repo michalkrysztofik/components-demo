@@ -1,4 +1,4 @@
-package org.example;
+package org.example.persistance;
 
 import org.springframework.stereotype.Component;
 
@@ -11,11 +11,11 @@ import static java.nio.file.StandardOpenOption.CREATE;
 import static java.nio.file.StandardOpenOption.TRUNCATE_EXISTING;
 
 @Component
-public class TextFileGateway implements Gateway {
+public class TextFileGateway {
 
   private static final Path PATH = Path.of(TextFileGateway.class.getResource("/").getPath(), "db.txt");
 
-  @Override
+
   public synchronized void save(String input) {
     try {
       Files.writeString(PATH, input, UTF_8, CREATE, TRUNCATE_EXISTING);
@@ -24,7 +24,6 @@ public class TextFileGateway implements Gateway {
     }
   }
 
-  @Override
   public String load() {
     if (!Files.exists(PATH))
       return null;
