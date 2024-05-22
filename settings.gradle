@@ -1,7 +1,8 @@
 rootProject.name = 'component-demo'
 
-include 'api'
-include 'lib'
-include 'core'
-include 'random'
+include 'app'
+include 'imports:api'
+include 'imports:core'
+include 'random:api'
+include 'random:core'
 

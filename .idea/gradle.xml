@@ -9,10 +9,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/api" />
-            <option value="$PROJECT_DIR$/core" />
-            <option value="$PROJECT_DIR$/lib" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/imports" />
+            <option value="$PROJECT_DIR$/imports/api" />
+            <option value="$PROJECT_DIR$/imports/core" />
             <option value="$PROJECT_DIR$/random" />
+            <option value="$PROJECT_DIR$/random/api" />
+            <option value="$PROJECT_DIR$/random/core" />
           </set>
         </option>
       </GradleProjectSettings>
