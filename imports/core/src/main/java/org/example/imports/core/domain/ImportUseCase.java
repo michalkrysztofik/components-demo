@@ -1,16 +1,16 @@
 package org.example.imports.core.domain;
 
+import org.example.imports.core.infra.Gateway;
 import org.example.imports.core.infra.Importer;
-import org.example.imports.persistence.TextFileGateway;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ImportUseCase {
 
   private final Importer importer;
-  private final TextFileGateway gateway;
+  private final Gateway gateway;
 
-  ImportUseCase(Importer importer, TextFileGateway gateway) {
+  ImportUseCase(Importer importer, Gateway gateway) {
     this.importer = importer;
     this.gateway = gateway;
   }

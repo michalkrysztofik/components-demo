@@ -1,14 +1,14 @@
 package org.example.imports.core.domain;
 
-import org.example.imports.persistence.TextFileGateway;
+import org.example.imports.core.infra.Gateway;
 import org.springframework.stereotype.Component;
 
 @Component
 public class GetDataUseCase {
 
-  private final TextFileGateway gateway;
+  private final Gateway gateway;
 
-  GetDataUseCase(TextFileGateway gateway) {
+  GetDataUseCase(Gateway gateway) {
     this.gateway = gateway;
   }
 
