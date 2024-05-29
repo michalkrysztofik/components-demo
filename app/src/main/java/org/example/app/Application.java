@@ -12,7 +12,7 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
   DataSourceAutoConfiguration.class,
   DataSourceTransactionManagerAutoConfiguration.class,
   HibernateJpaAutoConfiguration.class
-})
+}, scanBasePackages = {"org.example.imports.api", "org.example.random.api"})
 @ConfigurationPropertiesScan
 public class Application {
 
