@@ -1,6 +1,6 @@
 package org.example.imports.lib;
 
-import org.example.imports.core.infra.Importer;
+import org.example.imports.core.ports.Importer;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;

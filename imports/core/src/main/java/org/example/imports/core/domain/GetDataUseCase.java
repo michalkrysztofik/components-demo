@@ -1,6 +1,6 @@
 package org.example.imports.core.domain;
 
-import org.example.imports.core.infra.Gateway;
+import org.example.imports.core.ports.Gateway;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,6 +1,6 @@
 package org.example.imports.persistence;
 
-import org.example.imports.core.infra.Gateway;
+import org.example.imports.core.ports.Gateway;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;

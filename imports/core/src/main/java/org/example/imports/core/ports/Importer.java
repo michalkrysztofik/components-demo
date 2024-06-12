@@ -1,4 +1,4 @@
-package org.example.imports.core.infra;
+package org.example.imports.core.ports;
 
 public interface Importer {
 
