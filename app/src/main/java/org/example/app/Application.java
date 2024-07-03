@@ -7,12 +7,11 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerA
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 
-
 @SpringBootApplication(exclude = {
   DataSourceAutoConfiguration.class,
   DataSourceTransactionManagerAutoConfiguration.class,
   HibernateJpaAutoConfiguration.class
-}, scanBasePackages = {"org.example.imports.api", "org.example.random.api"})
+})
 @ConfigurationPropertiesScan
 public class Application {
 

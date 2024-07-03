@@ -13,8 +13,8 @@ repositories {
 }
 
 dependencies {
-    implementation(project(':imports:api'))
-    implementation(project(':random:api'))
+    runtimeOnly(project(':imports:api'))
+    runtimeOnly(project(':random:api'))
 
     implementation('org.springframework.boot:spring-boot-starter-web')
     implementation('org.springframework.boot:spring-boot-starter-data-jpa')
